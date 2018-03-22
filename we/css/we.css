@@ -1,0 +1,764 @@
+body {
+    -webkit-overflow-scrolling: touch;
+    background:#2A0466;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+#music_controller {
+    width: 1.05rem;
+    height: 1.05rem;
+    position: absolute;
+    top: 0.85rem;
+    right: 0.65rem;
+    animation: zdLoop 5s linear infinite;
+}
+
+.footer {
+    background: url(../images/bottom@2x.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 24px;
+    height: 42px;
+    left: 4%;
+    margin-top: 10px;
+    width: 92%;
+    text-align: center;
+}
+
+.loading-footer {
+    background: url(../images/loading/0-3@2x.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 1.2rem;
+    height: 1.45rem;
+    left: 4%;
+    margin-top: 0.5rem;
+    width: 92%;
+    text-align: center;
+}
+
+.arrow {
+    width: 10%;
+    display: none;
+    margin: 0 auto;
+}
+
+.arrow {
+    animation: nextPage 1s infinite;
+}
+
+.flash {
+    animation: nextPage 5s ease-in infinite alternate;
+}
+
+
+
+
+
+
+
+/*page0*/
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.loading-circle {
+    background: #2A0466 url('../images/loading/0-bg@2x.png') 0 0 no-repeat;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-circle .ball {
+    animation: zdLoop 3s linear infinite;
+}
+
+
+
+
+
+
+
+/*page1*/
+
+.page1 {
+    background: #2A0466 url('../images/p1/1-bg@2x.png') 0 0 no-repeat;
+    background-size: cover;
+}
+
+.page1 .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin-top: 2.85rem;
+}
+
+.page1 .title-top {
+    font-size: 0;
+}
+
+.page1 .title-mid {
+    margin-top: 1.3rem;
+    position: relative;
+}
+
+.page1 .hiddenSpan {
+    display: inline-block;
+    width: 15rem;
+    height: 3.65rem; // background: red;
+    position: absolute;
+    bottom: 3.8rem;
+    right: 1.9rem;
+}
+
+.page1 .title-top img,
+.page1 .title-mid img {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*page2*/
+
+.page2 {
+    background: #2A0466 url('../images/p2/2-bg@2x.png') 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+.page2 .text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*page3*/
+
+.page3 {
+    background: #2A0466 url('../images/p3/3-bg@2x.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.page3 .block {
+    position: absolute;
+    top: 4.35rem;
+    left: 1.85rem;
+    bottom: 0;
+    right: 0;
+}
+
+.page3 .block1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page3 .block2 {
+    display: none;
+    position: absolute;
+    top: 10.35rem;
+    left: 0;
+}
+
+.page3 .block3 {
+    display: none;
+    position: absolute;
+    top: 16.4rem;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+/*page4*/
+
+.page4 {
+    background: #2A0466 url('../images/p4/4-bg@2x.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.page4 .block {
+    position: absolute;
+    width: 100%;
+    top: 2.45rem;
+    left: 0;
+}
+
+.page4 .block1>img {
+    position: absolute;
+    top: 0.6rem;
+    left: 2.6rem;
+    display: none;
+}
+
+.page4 .block .block-text {
+    text-align: center;
+    height: 9.6rem;
+    display: none;
+    width: 100%;
+    background: url('../images/p4/4-1-1@2x.png') center center no-repeat;
+    background-size: contain;
+}
+
+.page4 .block .block-text img {
+    position: relative;
+    top: 3.75rem;
+}
+
+.page4 .block2 {
+    padding-left: 2rem;
+}
+
+.page4 .block2 .img1,
+.page4 .block2 .img2,
+.page4 .block2 .img3,
+.page4 .block2 .img4,
+{
+
+    display: none;
+}
+
+
+
+
+
+
+
+/*page5*/
+
+.page5 {
+    background: #2A0466 url('../images/p5/5-bg@2x.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.page5 .title {
+    background-size: contain;
+    width: 100%;
+    display: none;
+    top: 2.1rem;
+    left: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.page5 .text {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 8.25rem;
+    text-align: center;
+    margin: 0 0.4rem 0 0.95rem;
+}
+
+.page5 .text .textLeft {
+    float: left;
+}
+
+.page5 .bottom {
+    background: url('../images/p5/5-5@2x.png') center center no-repeat;
+    background-size: 16.8rem 7.75rem;
+    position: absolute;
+    width: 100%;
+    height: 8rem;
+    left: 0;
+    bottom: 4.25rem;
+    text-align: center;
+    display: none;
+}
+
+.page5 .bottom .img2 {
+    position: relative;
+    left: 2.5rem;
+    top: 4.4rem;
+    bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*page6*/
+
+.page6 {
+    background: #2A0466 url('../images/p6/6-bg@2x.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.page6 .title {
+    width: 100%;
+    text-align: center;
+    top: 1.2rem;
+    left: 0;
+    position: absolute;
+    display: none;
+}
+
+.page6 .block {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 6.65rem;
+}
+
+.page6 .block .block1 {
+    position: absolute;
+    top: 0;
+    left: 1.4rem;
+    display: none;
+}
+
+.page6 .block .block2 {
+    position: absolute;
+    top: 7.05rem;
+    left: 3.05rem;
+    display: none;
+}
+
+.page6 .block .block3 {
+    position: absolute;
+    top: 13.25rem;
+    left: 5rem;
+    display: none;
+}
+
+.page6 .block-title {
+    margin-left: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+/*page7*/
+
+.page7 {
+    background: #2A0466 url('../images/p7/7-bg@2x.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.page7 .title {
+    padding-top: 1.25rem;
+    text-align: center;
+    display: none;
+}
+
+.page7 .block {
+    position: relative;
+    margin-top: 1.15rem;
+}
+
+.page7 .block1 {
+    top: 0;
+    left: 1.75rem;
+    position: absolute;
+    display: none;
+}
+
+.page7 .block2 {
+    top: 15.25rem;
+    left: 1.75rem;
+    position: absolute;
+    display: none;
+}
+
+
+
+
+
+/*page8*/
+
+.page8 {
+    background: #2A0466 url('../images/p8/8-bg@2x.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.page8 .title {
+    padding-top: 1.1rem;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.page8 .block1 {
+    position: relative;
+    display: none;
+}
+
+.page8 .block1 img {
+    position: absolute;
+    top: -0.6rem;
+    right: 0.4rem;
+}
+
+.page8 .block2 {
+    position: relative;
+    background: url(../images/p8/8-3@2x.png) center center no-repeat;
+    background-size: 16.15rem 14.95rem;
+    width: 16.15rem;
+    height: 14.95rem;
+    top: 5.1rem;
+    left: calc(50% - 8rem);
+    display: none;
+}
+
+.page8 .block2 img {
+    position: absolute;
+    top: -0.2rem;
+    left: 2.1rem;
+}
+
+.page8 .block3 {
+    position: absolute;
+    display: none;
+    bottom: 3rem;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/*page9*/
+
+.page9 {
+    // background: #2A0466 url('../images/p9/bg-9.png') center center no-repeat;
+    background-size: contain;
+}
+
+
+
+/*page10*/
+
+.page10 {
+    background: #2A0466 url('../images/p10/10-bg@2x.png') center center no-repeat;
+    background-size: contain;
+}
+
+.page10 .title {
+    padding-top: 0.95rem;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.page10 .block {
+    position: relative;
+    padding-left: 33px;
+    padding-top: 14px;
+}
+
+.page10 .block1,
+.page10 .block2,
+.page10 .block3,
+.page10 .block4 {
+    display: none;
+}
+
+.page10 .block2 {
+    margin-top: 8px;
+}
+
+.page10 .block3 {
+    margin-top: 21px;
+}
+
+.page10 .block4 {
+    margin-top: 16px;
+}
+
+
+/*page11*/
+
+.page11 {
+    background: #2A0466 url('../images/p11/11-bg@2x.png') center center no-repeat;
+    background-size: contain;
+}
+
+
+
+/*page12*/
+
+.page12 {
+    // background: #2A0466 url('../images/p9/bg-9.png') center center no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+.fadeIn {
+    animation: zdFadeIn 2s;
+}
+
+.fadeUp {
+    animation: zdFadeUp 2s;
+}
+
+
+
+
+
+
+
+
+
+/*从上往下淡入*/
+
+@keyframes zdFadeUp {
+    0% {
+        opacity: 0;
+        top: 30px;
+    }
+
+    20% {
+        opacity: 0;
+        top: 8px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes zdFadeUp {
+    0% {
+        opacity: 0;
+        top: 30px;
+    }
+
+    20% {
+        opacity: 0;
+        top: 8px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes zdZoom2 {
+    0% {
+        transform: scale(0.8)
+    }
+
+    25% {
+        transform: scale(1.2)
+    }
+
+    50% {
+        transform: scale(0.9)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes zdZoom2 {
+    0% {
+        transform: scale(0.8)
+    }
+
+    25% {
+        transform: scale(1.2)
+    }
+
+    50% {
+        transform: scale(0.9)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes title1 {
+    from {
+        transform: scale(0.1);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes title1 {
+    from {
+        transform: scale(0.1);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes nextPage {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes nextPage {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zdZoomIn {
+    from {
+        /*opacity: 0;*/
+        transform: scale(0.6)
+    }
+
+    to {
+        /*opacity: 1;*/
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes zdZoomIn {
+    from {
+        /*opacity: 0;*/
+        transform: scale(0.6)
+    }
+
+    to {
+        /*opacity: 1;*/
+        transform: scale(1)
+    }
+}
+
+@keyframes zdShake {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes zdShake {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes zdLoop {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes zdLoop {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
