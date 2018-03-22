@@ -190,7 +190,7 @@ window.onload = function() {
         },
     });
     $('.loading').fadeOut();
-    $('#fullpage').fullpage.moveTo(1)
+    $('#fullpage').fullpage.moveTo(9)
 
     showPage1();
 
@@ -529,10 +529,42 @@ var hidePage8 = function() {
     $('.page8 .arrow').hide()
 }
 var showPage9 = function() {
-
+    console.log('ssss')
+    window.p9t1 = setTimeout(function() {
+        $('.page9 .title').show()
+        $('.page9 .title img').addClass('fadeIn')
+    }, 500)
+    window.p9t2 = setTimeout(function() {
+        $('.page9 #imgSlider').show()
+        $('.page9 #imgSlider').addClass('fadeIn')
+        // 以实例化的不需要再实例
+        if($('ul.sw-bullet').length==0){
+            $('#imgSlider').swipeslider({
+                autoPlay:false
+            });
+        }
+        $('.page9 .subfix').fadeIn()
+    }, 1000)
+    window.p9t3 = setTimeout(function() {
+        $('.page9 .arrow').show()
+    }, 1500)
 }
 var hidePage9 = function() {
-
+    if (typeof(p9t1) == 'number') {
+        clearTimeout(p9t1);
+    }
+    if (typeof(p9t2) == 'number') {
+        clearTimeout(p9t2);
+    }
+    if (typeof(p9t3) == 'number') {
+        clearTimeout(p9t3);
+    }
+    $('.page9 .title').hide()
+    $('.page9 .title img').removeClass('fadeIn')
+    $('.page9 #imgSlider').hide()
+    $('.page9 #imgSlider').removeClass('fadeIn')
+    $('.page9 .subfix').hide()
+    $('.page9 .arrow').hide()
 }
 var showPage10 = function() {
     window.p10t1 = setTimeout(function() {
@@ -587,7 +619,7 @@ var hidePage10 = function() {
     $('.page10 .block4 img').removeClass('fadeIn')
     $('.page10 .arrow').hide()
 }
-var showPage11 = function() { 
+var showPage11 = function() {
     window.p11t1 = setTimeout(function() {
 
     }, 1000)

@@ -479,16 +479,29 @@ body {
 /*page9*/
 
 .page9 {
-    // background: #2A0466 url('../images/p9/bg-9.png') center center no-repeat;
+    background: #2A0466 url('../images/p9/9-bg@2x.png') 0 0 no-repeat;
     background-size: contain;
 }
 
-
-
+.page9 #imgSlider{
+    width:13.9rem;
+    height:21.5rem;
+    margin: 0 auto;
+}
+.page9 .title,
+.page9 .subfix{
+    display:none;
+}
+.page9 #imgSlider{
+    display:none;
+}
+.page9 .subfix{
+    text-align: center;
+}
 /*page10*/
 
 .page10 {
-    background: #2A0466 url('../images/p10/10-bg@2x.png') center center no-repeat;
+    background: #2A0466 url('../images/p10/10-bg@2x.png') 0 0 no-repeat;
     background-size: contain;
 }
 
@@ -528,7 +541,7 @@ body {
 /*page11*/
 
 .page11 {
-    background: #2A0466 url('../images/p11/11-bg@2x.png') center center no-repeat;
+    // background: #2A0466 url('../images/p11/11-bg@2x.png') center center no-repeat;
     background-size: contain;
 }
 
